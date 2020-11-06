@@ -1,0 +1,133 @@
+@include mediaXl{
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .boxes{
+        div{
+            width: 60%;
+        }
+     }
+}
+@include mediaLg{
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .boxes{
+        width: 55%;
+        div{
+            width: 100%;
+        }
+     }
+}
+@include mediaMd{
+    main{
+        align-items: center;
+        text-align: center;
+        .lg-heading{
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        &#home{
+            height: 100%;
+        }
+        
+    }
+
+    ul.menu-nav,
+    div.menu-branding{
+        float: none;
+        width: 100%;
+        min-height: 0; 
+        text-align: center;
+        
+    }
+    ul.menu-nav{
+        height: 80vh;
+    }
+    div.menu-branding{
+        height: 20vh;
+        .portrait{
+            width: 140px;
+            height: 140px;
+            background-size: 100%;
+        }
+    }
+    .about-info{
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'trainee1'
+        'trainee2';
+
+        grid-template-columns: 1fr ;
+        .bio{
+            text-align: left;
+        }
+    }
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+        .item{
+            img{
+                width: 70%;
+            }
+            .btn{
+               margin: .1rem auto;
+               width: 70%;
+            }
+        }
+    }
+    .boxes{
+        width: 100%;
+        div{
+            width: 100%;
+            margin-left: 0;
+            padding: 0.5rem;
+            &:hover{
+                left: 0;
+                top: 9px;
+            }
+        }
+        
+     }
+  
+} 
+@include mediaSm{
+    main#home h1{
+        margin-top: 10vh; 
+       
+    }
+    .text-secondary{
+        text-align: center;
+    }
+    div.menu-branding{
+        height: 23vh;}
+    .projects{
+        grid-template-columns: 1fr;
+        
+        .item{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10rem;
+            //background-color: yellow;
+            img{
+                border: 2px solid white;
+                width: 70%;
+                height: 45%;
+            }
+        }
+    }
+    .btn{
+        margin: 0.3rem auto;
+    }
+#home{
+    height: 100vh;
+}
+.boxes{
+    //background-color: red;
+    min-width: 100%;
+    div{
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+ }
+}

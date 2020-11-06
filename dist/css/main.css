@@ -1,0 +1,300 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+  right: 5px;
+  cursor: pointer; }
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%; }
+  .menu-branding, .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #323232; }
+  .menu .nav-item.current > a {
+    color: #ecec7a;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; }
+  .menu-branding {
+    background-color: #aaaaaa; }
+    .menu-branding .portrait {
+      width: 180px;
+      height: 180px;
+      background: url("../img/Ishan.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      border-radius: 50%;
+      border: 2px solid #373737; }
+      .menu-branding .portrait:hover {
+        border-color: #e2e237;
+        opacity: 0.7;
+        transition: 1s; }
+  .menu .nav-link {
+    display: inline-block;
+    padding: 1rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400; }
+    .menu .nav-link:hover {
+      color: #ecec7a; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #444;
+  color: white;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: #232323;
+    background-attachment: fixed;
+    background-size: cover; }
+
+h1, h2 {
+  margin: 0;
+  color: white;
+  font-weight: 500; }
+  h1.lg-heading, h2.lg-heading {
+    font-size: 3.5rem; }
+  h1.sm-heading, h2.sm-heading {
+    margin-top: .5rem;
+    background: rgba(73, 73, 73, 0.1);
+    font-weight: 400; }
+
+.text-secondary {
+  color: #ecec7a;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px); }
+  main .icons {
+    margin-top: 2.5rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #ecec7a; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh;
+      font-size: 6rem;
+      font-weight: 400; }
+
+.about-info {
+  display: grid;
+  grid-template-areas: 'bioimage bio' 'trainee1 trainee2';
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px; }
+  .about-info .bio-image {
+    height: 150px;
+    width: 150px;
+    grid-area: bioimage;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 50%;
+    border: 3px solid #ecec7a; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.1rem; }
+    .about-info .bio .text-secondary {
+      font-weight: 500;
+      margin: 0;
+      text-shadow: none; }
+    .about-info .bio ul {
+      list-style-type: none; }
+    .about-info .bio ul li::before {
+      content: '\2022';
+      margin-left: -4em;
+      padding: 2rem;
+      color: #ecec7a; }
+  .about-info .trainee-1 {
+    grid-area: trainee1; }
+  .about-info .trainee-2 {
+    grid-area: trainee2; }
+  .about-info .trainning {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: 4px solid #ecec7a;
+    box-shadow: 0 1px 4px black; }
+    .about-info .trainning h3 {
+      color: #ecec7a;
+      font-weight: 500; }
+    .about-info .trainning h5 {
+      color: greenyellow;
+      letter-spacing: 1px; }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; }
+  .projects .item {
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%; }
+    .projects .item .text-secondary {
+      font-size: 1.5rem; }
+    .projects .item img {
+      width: 75%;
+      height: 45%;
+      border: 2px solid white; }
+      .projects .item img:hover {
+        border-color: #efef90;
+        box-shadow: 0 3px 7px black;
+        opacity: 0.3;
+        transition: 1s; }
+
+.btn, .btn-light, .btn-dark {
+  display: block;
+  padding: 0.4Rem;
+  border: 0;
+  width: 75%;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-light:hover, .btn-dark:hover {
+    background: #e6e64d;
+    color: black; }
+
+.btn-light {
+  background: #c4c4c4;
+  color: black; }
+
+.btn-dark {
+  background: black; }
+
+.boxes {
+  margin-top: 1rem;
+  display: block;
+  width: 35%;
+  min-height: 100%; }
+  .boxes div {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border: 3px solid white;
+    position: relative; }
+    .boxes div:hover {
+      box-shadow: inset 4px 0 7px #ecec7a; }
+    .boxes div:hover, .boxes div:hover a {
+      background: #2b2b2b;
+      border-color: #ecec7a;
+      left: 9px;
+      color: greenyellow; }
+    .boxes div .text-secondary {
+      display: block; }
+
+#main-footer {
+  height: 60px;
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b; }
+
+@media screen and (max-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); }
+  .boxes div {
+    width: 60%; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes {
+    width: 55%; }
+    .boxes div {
+      width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+    main#home {
+      height: 100%; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+    text-align: center; }
+  ul.menu-nav {
+    height: 80vh; }
+  div.menu-branding {
+    height: 20vh; }
+    div.menu-branding .portrait {
+      width: 140px;
+      height: 140px;
+      background-size: 100%; }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'trainee1' 'trainee2';
+    grid-template-columns: 1fr; }
+    .about-info .bio {
+      text-align: left; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); }
+    .projects .item img {
+      width: 70%; }
+    .projects .item .btn, .projects .item .btn-light, .projects .item .btn-dark {
+      margin: .1rem auto;
+      width: 70%; }
+  .boxes {
+    width: 100%; }
+    .boxes div {
+      width: 100%;
+      margin-left: 0;
+      padding: 0.5rem; }
+      .boxes div:hover {
+        left: 0;
+        top: 9px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; }
+  .text-secondary {
+    text-align: center; }
+  div.menu-branding {
+    height: 23vh; }
+  .projects {
+    grid-template-columns: 1fr; }
+    .projects .item {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10rem; }
+      .projects .item img {
+        border: 2px solid white;
+        width: 70%;
+        height: 45%; }
+  .btn, .btn-light, .btn-dark {
+    margin: 0.3rem auto; }
+  #home {
+    height: 100vh; }
+  .boxes {
+    min-width: 100%; }
+    .boxes div {
+      width: 100%;
+      margin-bottom: 0.8rem; } }
