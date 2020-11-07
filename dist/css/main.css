@@ -124,13 +124,6 @@ main {
       font-weight: 500;
       margin: 0;
       text-shadow: none; }
-    .about-info .bio ul {
-      list-style-type: none; }
-    .about-info .bio ul li::before {
-      content: '\2022';
-      margin-left: -4em;
-      padding: 2rem;
-      color: #ecec7a; }
   .about-info .trainee-1 {
     grid-area: trainee1; }
   .about-info .trainee-2 {
@@ -146,6 +139,25 @@ main {
     .about-info .trainning h5 {
       color: greenyellow;
       letter-spacing: 1px; }
+
+.bullet {
+  list-style-type: none; }
+
+.bullet li::before {
+  content: '\2022';
+  margin-left: -4em;
+  padding: 2rem;
+  color: #ecec7a; }
+
+.salesforce {
+  margin: 2rem  0 0 0;
+  padding: 0.5rem;
+  background-color: #414141;
+  box-shadow: 0 1px 4px #ecec7a;
+  border-radius: 7px; }
+  .salesforce .text-secondary {
+    text-shadow: none;
+    font-weight: 500; }
 
 .projects {
   display: grid;
@@ -254,6 +266,10 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'trainee1' 'trainee2';
     grid-template-columns: 1fr; }
     .about-info .bio {
+      text-align: left; }
+  .salesforce {
+    text-align: left; }
+    .salesforce .text-secondary {
       text-align: left; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }

@@ -64,6 +64,13 @@
             text-align: left;
         }
     }
+    .salesforce{
+        text-align: left;
+        .text-secondary{
+            text-align: left;
+        }
+        
+    }
     .projects{
         grid-template-columns: repeat(2, 1fr);
         .item{
@@ -102,6 +109,9 @@
     div.menu-branding{
         height: 23vh;
     }
+
+  
+  
     .projects{
         grid-template-columns: 1fr;
         .item{
@@ -120,15 +130,15 @@
         }
     }
    
-#home{
+    #home{
     height: 100vh;
-}
-.boxes{
+   }
+   .boxes{
     //background-color: red;
     min-width: 100%;
     div{
         width: 100%;
         margin-bottom: 0.8rem;
     }
- }
+   }
 }
