@@ -282,6 +282,7 @@ main {
   .projects {
     grid-template-columns: 1fr; }
     .projects .item {
+      background-color: red;
       margin-bottom: 3rem;
       padding: 0; }
       .projects .item img {
