@@ -23,7 +23,7 @@ h1,h2{
     }
     &.sm-heading{
         margin-top: .5rem; 
-        background: rgba(lighten($primary-color, 2), 0.1) ;
+        background: rgba(lighten($primary-color, 5), 0.2) ;
         font-weight: 400;
     }
 }
