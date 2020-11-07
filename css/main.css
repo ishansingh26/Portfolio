@@ -282,14 +282,16 @@ main {
   .projects {
     grid-template-columns: 1fr; }
     .projects .item {
-      width: 100%;
+      background-color: yellow;
+      margin-bottom: 3rem;
       padding: 0; }
       .projects .item img {
         border: 2px solid white;
-        width: 70%;
-        height: 55%; }
-  .btn, .btn-light, .btn-dark {
-    margin: 0.3rem auto; }
+        width: 80%;
+        height: 60%; }
+      .projects .item .btn, .projects .item .btn-light, .projects .item .btn-dark {
+        margin: 0.3rem auto;
+        width: 80%; }
   #home {
     height: 100vh; }
   .boxes {
