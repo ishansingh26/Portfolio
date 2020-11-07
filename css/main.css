@@ -73,7 +73,6 @@ h1, h2 {
     font-size: 3.5rem; }
   h1.sm-heading, h2.sm-heading {
     margin-top: .5rem;
-    background: rgba(81, 81, 81, 0.2);
     font-weight: 400; }
 
 .text-secondary {
