@@ -19,8 +19,14 @@ $secondary-color: rgb(236, 236, 122);
         @content;
     }
 }
+@mixin mediaMdLandscape{
+    @media screen and (min-width: 360px) and (max-width: 767px) and 
+     (orientation: landscape){
+        @content;
+    }
+}
 @mixin mediaLg{
-    @media screen and (min-width: 769px) and (max-width: 1170px){
+    @media screen and (min-width: 768px) and (max-width: 1170px){
         @content;
     }
 }
