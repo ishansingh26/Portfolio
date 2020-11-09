@@ -150,11 +150,12 @@ main {
   color: #ecec7a; }
 
 .salesforce {
-  margin: 2rem  0 0 0;
+  margin: 3.5rem  0 0 0;
   padding: 0.5rem;
-  background-color: #414141;
+  background-color: #515151;
   box-shadow: 0 1px 4px #ecec7a;
-  border-radius: 7px; }
+  border-radius: 8px;
+  font-size: 1.1rem; }
   .salesforce .text-secondary {
     text-shadow: none;
     font-weight: 500; }
@@ -239,7 +240,7 @@ main {
     .boxes div {
       width: 100%; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
   main {
     align-items: center;
     text-align: center; }
@@ -283,14 +284,17 @@ main {
     .boxes div {
       width: 100%;
       margin-left: 0;
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      font-size: 1rem; }
       .boxes div:hover {
         left: 0;
         top: 9px; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 359px) {
   main#home h1 {
     margin-top: 10vh; }
+  .sm-heading {
+    font-size: 1rem; }
   .text-secondary {
     text-align: center; }
   div.menu-branding {
@@ -298,6 +302,7 @@ main {
   .projects {
     grid-template-columns: 1fr; }
     .projects .item {
+      background-color: white;
       margin-bottom: 3rem;
       padding: 0; }
       .projects .item img {
@@ -313,4 +318,9 @@ main {
     min-width: 100%; }
     .boxes div {
       width: 100%;
-      margin-bottom: 0.8rem; } }
+      font-size: 0.6rem;
+      margin-bottom: 0.8rem;
+      text-align: center; }
+      .boxes div:hover {
+        left: 0;
+        top: 9px; } }

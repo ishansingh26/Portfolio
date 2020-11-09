@@ -119,11 +119,12 @@ main{
     color: $secondary-color;
 }
 .salesforce{
-    margin:   2rem  0 0 0 ;
+    margin:   3.5rem  0 0 0 ;
     padding: 0.5rem;
-    background-color:  darken($primary-color, 1);
+    background-color:  lighten($primary-color, 5);
     box-shadow: 0 1px 4px $secondary-color;
-    border-radius: 7px;
+    border-radius: 8px;
+    font-size: 1.1rem;
     .text-secondary{
         text-shadow: none;
         font-weight: 500;
