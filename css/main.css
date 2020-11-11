@@ -317,7 +317,7 @@ main {
   div.menu-branding {
     height: 30vh; }
   ul.menu-nav {
-    height: 100vh; }
+    height: 70vh; }
   .projects {
     grid-template-columns: 1fr; }
     .projects .item {
