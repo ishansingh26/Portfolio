@@ -153,31 +153,32 @@ main {
   margin: 3.5rem  0 0 0;
   padding: 0.5rem;
   background-color: #515151;
-  box-shadow: 0 1px 4px #ecec7a;
-  border-radius: 8px;
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  box-shadow: 0 1px 4px black;
+  border-radius: 5px; }
   .salesforce .text-secondary {
+    text-align: left;
     text-shadow: none;
     font-weight: 500; }
 
 .projects {
+  margin-top: 15px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px; }
+  grid-gap: 15px; }
   .projects .item {
-    margin-top: 1rem;
     width: 100%;
-    height: 100%; }
+    height: 25rem; }
     .projects .item .text-secondary {
       font-size: 1.5rem; }
     .projects .item img {
       width: 75%;
-      height: 45%;
+      height: 65%;
       border: 2px solid white; }
       .projects .item img:hover {
-        border-color: #efef90;
-        box-shadow: 0 3px 7px black;
-        opacity: 0.3;
+        border-color: #dfdf21;
+        box-shadow: 0 6px 7px black;
+        opacity: 0.6;
         transition: 1s; }
 
 .btn, .btn-light, .btn-dark {
@@ -240,7 +241,7 @@ main {
     .projects .item {
       margin: auto;
       width: 70%;
-      height: 27rem; }
+      height: 26rem; }
       .projects .item img {
         width: 100%;
         height: 70%; }
@@ -253,8 +254,7 @@ main {
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
   main {
-    align-items: center;
-    text-align: center; }
+    align-items: center; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
@@ -267,9 +267,9 @@ main {
     min-height: 0;
     text-align: center; }
   ul.menu-nav {
-    height: 80vh; }
+    height: 77vh; }
   div.menu-branding {
-    height: 20vh; }
+    height: 23vh; }
     div.menu-branding .portrait {
       width: 140px;
       height: 140px;
@@ -285,14 +285,17 @@ main {
       text-align: left; }
   .projects {
     grid-template-columns: 1fr; }
+    .projects .text-secondary {
+      text-align: center; }
     .projects .item {
-      height: 15rem; }
+      height: 22rem;
+      width: 65%;
+      margin: auto; }
       .projects .item img {
-        width: 60%;
-        height: 50%; }
+        width: 100%;
+        height: 65%; }
       .projects .item .btn, .projects .item .btn-light, .projects .item .btn-dark {
-        margin: 0 auto;
-        width: 60%; }
+        width: 100%; }
   .boxes {
     width: 100%; }
     .boxes div {
@@ -305,14 +308,18 @@ main {
         top: 9px; } }
 
 @media screen and (min-width: 360px) and (max-width: 767px) and (orientation: landscape) {
-  .projects .item img {
-    width: 42%; }
-  .projects .item .btn, .projects .item .btn-light, .projects .item .btn-dark {
-    width: 42%; } }
+  .projects .item {
+    width: 45%; }
+    .projects .item img {
+      width: 100%; }
+    .projects .item .btn, .projects .item .btn-light, .projects .item .btn-dark {
+      width: 100%; } }
 
 @media screen and (max-width: 359px) {
-  main#home h1 {
-    margin-top: 10vh; }
+  main#home h1.lg-heading {
+    font-size: 3rem; }
+  main#about h1.lg-heading {
+    font-size: 2rem; }
   .sm-heading {
     font-size: 0.8rem; }
   .text-secondary {
@@ -328,20 +335,25 @@ main {
     min-height: 0;
     text-align: center; }
   div.menu-branding {
-    height: 30vh; }
+    height: 22vh; }
+    div.menu-branding .portrait {
+      width: 120px;
+      height: 120px; }
   ul.menu-nav {
-    height: 70vh; }
+    height: 78vh; }
+  .salesforce .bullet li {
+    margin-left: -0.2em; }
   .projects {
     grid-template-columns: 1fr; }
     .projects .item {
-      height: 15rem;
-      padding: 0; }
+      height: 15rem; }
       .projects .item .text-secondary {
         font-size: 1rem; }
       .projects .item img {
         width: 100%;
         height: 50%; }
       .projects .item .btn, .projects .item .btn-light, .projects .item .btn-dark {
+        padding: 0.1rem;
         width: 100%; }
   #home {
     height: 100vh; }
