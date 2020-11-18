@@ -3,7 +3,7 @@ $secondary-color: rgb(236, 236, 122);
 
 @mixin background{
          &#bg-img{
-             background: darken($primary-color, 13); 
+             background: darken($primary-color, 8); 
              background-attachment: fixed; 
              background-size: cover;
         } 
@@ -26,12 +26,12 @@ $secondary-color: rgb(236, 236, 122);
     }
 }
 @mixin mediaLg{
-    @media screen and (min-width: 768px) and (max-width: 1170px){
+    @media screen and (min-width: 767px) and (max-width: 1170px){
         @content;
     }
 }
 @mixin mediaXl{
-    @media screen and (max-width: 1171px){
+    @media screen and (min-width: 1171px){
         @content;
     }
 }

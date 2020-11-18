@@ -2,8 +2,9 @@
   position: absolute;
   z-index: 3;
   top: 20px;
-  right: 5px;
-  cursor: pointer; }
+  right: 10px;
+  cursor: pointer;
+  opacity: 0.8; }
 
 .menu {
   position: fixed;
@@ -23,12 +24,12 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    background-color: #323232; }
+    background-color: #2b2b2b; }
   .menu .nav-item.current > a {
     color: #ecec7a;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; }
   .menu-branding {
-    background-color: #aaaaaa; }
+    background-color: #3f3f3f; }
     .menu-branding .portrait {
       width: 180px;
       height: 180px;
@@ -36,17 +37,18 @@
       background-repeat: no-repeat;
       background-size: 100%;
       border-radius: 50%;
-      border: 2px solid #373737; }
+      border: 2px solid #373737;
+      opacity: 0.7; }
       .menu-branding .portrait:hover {
         border-color: #e2e237;
-        opacity: 0.7;
         transition: 1s; }
   .menu .nav-link {
     display: inline-block;
     padding: 1rem 0;
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 400; }
+    font-weight: 400;
+    opacity: 0.6; }
     .menu .nav-link:hover {
       color: #ecec7a; }
 
@@ -54,14 +56,14 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #444;
+  background-color: #323232;
   color: white;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: #232323;
+    background: #303030;
     background-attachment: fixed;
     background-size: cover; }
 
@@ -70,14 +72,16 @@ h1, h2 {
   color: white;
   font-weight: 500; }
   h1.lg-heading, h2.lg-heading {
-    font-size: 3.5rem; }
+    font-size: 3.5rem;
+    opacity: 0.6; }
   h1.sm-heading, h2.sm-heading {
     margin-top: .5rem;
-    background: rgba(81, 81, 81, 0.2);
-    font-weight: 400; }
+    background: rgba(76, 76, 76, 0.2);
+    font-weight: 400;
+    opacity: 0.6; }
 
 .text-secondary {
-  color: #ecec7a;
+  color: #9d9d16;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; }
 
 a {
@@ -93,7 +97,8 @@ main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
   main .icons {
-    margin-top: 2.5rem; }
+    margin-top: 2.5rem;
+    opacity: 0.8; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
@@ -116,10 +121,11 @@ main {
     grid-area: bioimage;
     margin: 1.5rem auto 0 auto;
     border-radius: 50%;
-    border: 3px solid #ecec7a; }
+    border: 3px solid #9d9d16; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    opacity: 0.6; }
     .about-info .bio .text-secondary {
       font-weight: 500;
       margin: 0;
@@ -129,12 +135,12 @@ main {
   .about-info .trainee-2 {
     grid-area: trainee2; }
   .about-info .trainning {
-    background: #515151;
+    background: #3f3f3f;
     padding: 0.5rem;
-    border-bottom: 4px solid #ecec7a;
-    box-shadow: 0 1px 4px black; }
+    box-shadow: 0 1px 4px black;
+    opacity: 0.7; }
     .about-info .trainning h3 {
-      color: #ecec7a;
+      color: #9d9d16;
       font-weight: 500; }
     .about-info .trainning h5 {
       color: greenyellow;
@@ -152,10 +158,11 @@ main {
 .salesforce {
   margin: 3.5rem  0 0 0;
   padding: 0.5rem;
-  background-color: #515151;
+  background-color: #3f3f3f;
   font-size: 1.1rem;
   box-shadow: 0 1px 4px black;
-  border-radius: 5px; }
+  border-radius: 5px;
+  opacity: 0.7; }
   .salesforce .text-secondary {
     text-align: left;
     text-shadow: none;
@@ -165,12 +172,13 @@ main {
   margin-top: 15px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 15px; }
+  grid-gap: 60px; }
   .projects .item {
     width: 100%;
     height: 25rem; }
     .projects .item .text-secondary {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      opacity: 0.6; }
     .projects .item img {
       width: 75%;
       height: 65%;
@@ -181,36 +189,38 @@ main {
         opacity: 0.6;
         transition: 1s; }
 
-.btn, .btn-light, .btn-dark {
+.btn, .btn-dark {
   display: block;
   padding: 0.4Rem;
   border: 0;
   width: 75%;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-light:hover, .btn-dark:hover {
-    background: #e6e64d;
-    color: black; }
-
-.btn-light {
-  background: #c4c4c4;
-  color: black; }
+  .btn:hover, .btn-dark:hover {
+    background: #323232;
+    border-color: #b3b31a; }
 
 .btn-dark {
-  background: black; }
+  background: #414141;
+  border: 1px solid black;
+  opacity: 0.6; }
+  .btn-dark i {
+    margin-right: 0.5rem; }
 
 .boxes {
-  margin-top: 1rem;
+  margin-top: 3rem;
   display: block;
-  width: 35%;
+  width: 55%;
   min-height: 100%; }
   .boxes div {
     display: block;
     width: 100%;
+    text-align: center;
     margin-bottom: 1.5rem;
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
     border: 3px solid white;
-    position: relative; }
+    position: relative;
+    opacity: 0.6; }
     .boxes div:hover {
       box-shadow: inset 4px 0 7px #ecec7a; }
     .boxes div:hover, .boxes div:hover a {
@@ -225,27 +235,40 @@ main {
   height: 60px;
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b; }
+  background: #1e1e1e;
+  opacity: 0.6; }
 
-@media screen and (max-width: 1171px) {
+@media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.5rem; }
     .projects .item {
-      height: 15rem; }
+      margin: auto;
+      width: 80%;
+      height: 28.5rem;
+      font-size: 1.2rem; }
+      .projects .item .text-secondary {
+        font-size: 2rem; }
+      .projects .item img {
+        width: 100%; }
+      .projects .item .btn, .projects .item .btn-dark {
+        width: 100%; }
   .boxes div {
     width: 60%; } }
 
-@media screen and (min-width: 768px) and (max-width: 1170px) {
+@media screen and (min-width: 767px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    height: 100%; }
     .projects .item {
       margin: auto;
-      width: 70%;
-      height: 26rem; }
+      width: 80%;
+      height: 30rem;
+      font-size: 1.2rem; }
       .projects .item img {
-        width: 100%;
-        height: 70%; }
-      .projects .item .btn, .projects .item .btn-light, .projects .item .btn-dark {
+        width: 100%; }
+      .projects .item .btn, .projects .item .btn-dark {
         width: 100%; }
   .boxes {
     width: 55%; }
@@ -288,13 +311,14 @@ main {
     .projects .text-secondary {
       text-align: center; }
     .projects .item {
-      height: 22rem;
-      width: 65%;
+      height: 17rem;
+      max-width: 65%;
+      height: 23rem;
       margin: auto; }
       .projects .item img {
         width: 100%;
         height: 65%; }
-      .projects .item .btn, .projects .item .btn-light, .projects .item .btn-dark {
+      .projects .item .btn, .projects .item .btn-dark {
         width: 100%; }
   .boxes {
     width: 100%; }
@@ -312,7 +336,7 @@ main {
     width: 45%; }
     .projects .item img {
       width: 100%; }
-    .projects .item .btn, .projects .item .btn-light, .projects .item .btn-dark {
+    .projects .item .btn, .projects .item .btn-dark {
       width: 100%; } }
 
 @media screen and (max-width: 359px) {
@@ -344,7 +368,8 @@ main {
   .salesforce .bullet li {
     margin-left: -0.2em; }
   .projects {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    grid-gap: 10px; }
     .projects .item {
       height: 15rem; }
       .projects .item .text-secondary {
@@ -352,7 +377,7 @@ main {
       .projects .item img {
         width: 100%;
         height: 50%; }
-      .projects .item .btn, .projects .item .btn-light, .projects .item .btn-dark {
+      .projects .item .btn, .projects .item .btn-dark {
         padding: 0.1rem;
         width: 100%; }
   #home {
