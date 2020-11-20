@@ -1,5 +1,5 @@
 /*@mixin mediaLgLandscape{
-    @media screen and (min-width: 767px) and (max-width: 1170px) and 
+    @media screen and (min-width: 767px) and (max-width: 1023px) and 
      (orientation: landscape){
         @content;
     }
@@ -117,6 +117,7 @@ main {
       font-weight: 400; }
 
 .about-info {
+  margin-top: 2rem;
   display: grid;
   grid-template-areas: 'bioimage bio' 'trainee1 trainee2';
   grid-template-columns: repeat(2, 1fr);
@@ -130,10 +131,12 @@ main {
     border: 3px solid #9d9d16; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
     opacity: 0.6; }
     .about-info .bio .text-secondary {
-      font-weight: 500;
+      font-weight: 400;
       margin: 0;
       text-shadow: none; }
   .about-info .trainee-1 {
@@ -144,16 +147,20 @@ main {
     background: #3f3f3f;
     padding: 0.5rem;
     box-shadow: 0 1px 4px black;
-    opacity: 0.7; }
+    opacity: 0.7;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px; }
     .about-info .trainning h3 {
       color: #9d9d16;
-      font-weight: 500; }
+      font-weight: 400; }
     .about-info .trainning h5 {
       color: greenyellow;
-      letter-spacing: 1px; }
+      font-weight: 400; }
 
 .bullet {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-left: .5rem; }
 
 .bullet li::before {
   content: '\2022';
@@ -167,11 +174,14 @@ main {
   background-color: #3f3f3f;
   box-shadow: 0 1px 4px black;
   border-radius: 5px;
-  opacity: 0.7; }
+  opacity: 0.7;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px; }
   .salesforce .text-secondary {
     text-align: left;
     text-shadow: none;
-    font-weight: 500; }
+    font-weight: 400; }
 
 .projects {
   margin-top: 15px;
@@ -249,15 +259,18 @@ main {
     font-size: 38px; }
   .about-info {
     grid-template-areas: 'bioimage bio' 'trainee1 trainee2';
-    grid-template-columns: repeat(2, 1fr);
-    font-size: 1.7rem; }
+    grid-template-columns: repeat(2, 1fr); }
     .about-info .bio-image {
       height: 190px;
       width: 190px; }
     .about-info .bio {
-      font-size: 1.7rem; }
+      font-size: 1.45rem; }
+    .about-info .trainning {
+      font-size: 1.45rem; }
+  .bullet li {
+    margin-left: 1rem; }
   .salesforce {
-    font-size: 1.7rem; }
+    font-size: 1.45rem; }
   .projects {
     grid-template-columns: repeat(3, 1fr); }
     .projects .item {
@@ -274,31 +287,32 @@ main {
   .boxes div {
     width: 100%; }
   #main-footer {
-    font-size: 1.4rem; } }
+    font-size: 1.6rem; } }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .menu-btn .fas {
     font-size: 35px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'trainee1' 'trainee2';
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    letter-spacing: 1px; }
     .about-info .bio-image {
-      height: 250px;
-      width: 250px; }
+      height: 150px;
+      width: 150px; }
     .about-info .bio {
       text-align: left;
-      font-size: 1.7rem;
-      margin-left: 3rem; }
-      .about-info .bio .text-secondary {
-        margin-left: -3rem; }
+      font-size: 1.45rem;
+      font-weight: 300; }
     .about-info .trainning {
-      font-size: 1.7rem; }
-  .salesforce .text-secondary {
-    font-size: 2rem;
-    font-weight: 500; }
-  .salesforce ul li {
-    font-size: 1.7rem;
-    margin-left: 3rem; }
+      font-size: 1.45rem;
+      font-weight: 300; }
+  .bullet li {
+    margin-left: 1rem; }
+  .salesforce {
+    font-size: 1.45rem;
+    letter-spacing: 1px; }
+    .salesforce ul li {
+      font-weight: 300; }
   .projects {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px; }
@@ -316,7 +330,7 @@ main {
     .boxes div {
       width: 100%; }
   #main-footer {
-    font-size: 1.5rem; } }
+    font-size: 1.4rem; } }
 
 /*@include  mediaLgLandscape{
     .about-info{
@@ -325,6 +339,9 @@ main {
         'trainee1 trainee2';
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
+        .bio{
+            font-size: 1.45;
+        }
     }
 }*/
 @media screen and (min-width: 360px) and (max-width: 767px) {
@@ -337,6 +354,8 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+    main .sm-heading {
+      font-size: 1.2rem; }
     main#home {
       height: 100%; }
   ul.menu-nav,
@@ -357,11 +376,15 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'trainee1' 'trainee2';
     grid-template-columns: 1fr; }
     .about-info .bio {
-      text-align: left; }
+      font-size: 1.2rem; }
+      .about-info .bio .text-secondary {
+        margin-left: 1rem; }
+    .about-info .trainning {
+      font-size: 1.2rem; }
+  .bullet li {
+    margin-left: 1rem; }
   .salesforce {
-    text-align: left; }
-    .salesforce .text-secondary {
-      text-align: left; }
+    font-size: 1.2rem; }
   .projects {
     grid-template-columns: 1fr; }
     .projects .text-secondary {
@@ -413,6 +436,10 @@ main {
     display: grid;
     grid-template-areas: 'bioimage'  'bio' 'trainee1'  'trainee2';
     grid-template-columns: 1fr; }
+    .about-info .bio {
+      font-size: 1rem; }
+    .about-info .trainning {
+      font-size: 1rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -426,8 +453,8 @@ main {
       height: 120px; }
   ul.menu-nav {
     height: 78vh; }
-  .salesforce .bullet li {
-    margin-left: -0.2em; }
+  .salesforce {
+    font-size: 1rem; }
   .projects {
     grid-template-columns: 1fr;
     grid-gap: 10px; }
@@ -452,4 +479,6 @@ main {
       text-align: center; }
       .boxes div:hover {
         left: 0;
-        top: 9px; } }
+        top: 9px; }
+  #main-footer {
+    font-size: 1rem; } }

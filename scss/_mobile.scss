@@ -14,12 +14,19 @@
             width: 190px;
         }
         .bio{
-            font-size: 1.7rem;
+            font-size: 1.45rem;
         }
-        font-size: 1.7rem;  
+        .trainning{
+            font-size: 1.45rem;
+           
+        }
+    }
+    .bullet li{
+        margin-left: 1rem;
     }
     .salesforce{
-        font-size: 1.7rem;
+        font-size: 1.45rem;
+      
     }
     .projects{
         grid-template-columns: repeat(3, 1fr);
@@ -49,7 +56,7 @@
         }
      }
      #main-footer{
-         font-size: 1.4rem;
+        font-size: 1.6rem;
      }
 }
 @include mediaLg{
@@ -65,32 +72,32 @@
         'trainee1'
         'trainee2';
         grid-template-columns: 1fr ;
+        letter-spacing: 1px;
         .bio-image{
-            height: 250px;
-            width: 250px;
+            height: 150px;
+            width: 150px;
         }
         .bio{
             text-align: left;
-            font-size: 1.7rem;
-            margin-left: 3rem;
-            .text-secondary{
-                margin-left: -3rem;
-            }
-        }
-        .trainning{
-            font-size: 1.7rem;
+            font-size: 1.45rem;
+            font-weight: 300;
+           // margin-left: 3rem;
             
         }
+        .trainning{
+            font-size: 1.45rem;
+            font-weight: 300;
+        }
+    }
+    .bullet li{
+        margin-left: 1rem;
     }
     .salesforce{
-        .text-secondary{
-            font-size: 2rem;
-            font-weight: 500;
-        }
+        font-size: 1.45rem;
+        letter-spacing: 1px;
         ul li{
-            font-size: 1.7rem;
-            margin-left: 3rem;
-        }  
+            font-weight: 300;
+        }      
     }
      
     .projects{
@@ -122,7 +129,7 @@
         }
      }
     #main-footer{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 /*@include  mediaLgLandscape{
@@ -132,6 +139,9 @@
         'trainee1 trainee2';
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
+        .bio{
+            font-size: 1.45;
+        }
     }
 }*/
 @include mediaMd{
@@ -146,6 +156,9 @@
         .lg-heading{
             line-height: 1;
             margin-bottom: 1rem;
+        }
+        .sm-heading{
+            font-size: 1.2rem;
         }
         &#home{
             height: 100%;
@@ -177,16 +190,22 @@
         'trainee2';
 
         grid-template-columns: 1fr ;
-      
+        
         .bio{
-            text-align: left;
+            font-size: 1.2rem;
+            .text-secondary{
+                margin-left: 1rem;
+            }
+        }
+        .trainning{
+            font-size: 1.2rem;
         }
     }
+    .bullet li{
+        margin-left: 1rem;
+    }
     .salesforce{
-        text-align: left;
-        .text-secondary{
-            text-align: left;
-        }
+       font-size: 1.2rem;
     }
     .projects{
         grid-template-columns:  1fr;
@@ -268,6 +287,12 @@
         'trainee1' 
         'trainee2';
         grid-template-columns: 1fr;
+        .bio{
+            font-size: 1rem;
+        }
+        .trainning{
+            font-size: 1rem;
+        }
     }
     ul.menu-nav,
     div.menu-branding{
@@ -288,9 +313,7 @@
       
     }
     .salesforce{
-        .bullet li{
-            margin-left: -0.2em;
-        }
+        font-size: 1rem;
     }
     .projects{
         grid-template-columns: 1fr;
@@ -326,5 +349,8 @@
             top: 9px;
         }
     }
+   }
+   #main-footer{
+       font-size: 1rem;
    }
 }

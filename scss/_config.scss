@@ -26,12 +26,12 @@ $secondary-color: rgb(236, 236, 122);
     }
 }
 @mixin mediaLg{
-    @media screen and (min-width: 768px) and (max-width: 1023px){
+    @media screen and (min-width: 767px) and (max-width: 1023px){
         @content;
     }
 }
 /*@mixin mediaLgLandscape{
-    @media screen and (min-width: 767px) and (max-width: 1170px) and 
+    @media screen and (min-width: 767px) and (max-width: 1023px) and 
      (orientation: landscape){
         @content;
     }
