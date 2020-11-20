@@ -1,42 +1,107 @@
 @include mediaXl{
+    .menu-btn{
+        .fas{
+            font-size: 38px;
+          }
+    }
+    .about-info{
+        grid-template-areas:
+        'bioimage bio'
+        'trainee1 trainee2';
+        grid-template-columns: repeat(2, 1fr);
+        .bio-image{
+            height: 190px;
+            width: 190px;
+        }
+        .bio{
+            font-size: 1.7rem;
+        }
+        font-size: 1.7rem;  
+    }
+    .salesforce{
+        font-size: 1.7rem;
+    }
     .projects{
         grid-template-columns: repeat(3, 1fr);
-        font-size: 1.5rem;
         .item{
             margin:  auto;
-            width: 80%;
-            height: 28.5rem;
+            max-width: 85%;
+            height: 25.5rem;
             font-size: 1.2rem; 
-            //background-color: yellow;
+           // background-color: yellow;
             .text-secondary{
-                font-size: 2rem; 
+                font-size: 1.7rem; 
             }
             img{
                 width: 100%;
                // height: 100%;
+               
             }
             .btn{
                 width: 100%;
             }
         }
-}
-    
+    }
     .boxes{
+        //background-color: red;
         div{
-            width: 60%;
+            width: 100%;
         }
+     }
+     #main-footer{
+         font-size: 1.4rem;
      }
 }
 @include mediaLg{
+    .menu-btn{
+        .fas{
+            font-size: 35px;
+          }
+    }
+    .about-info{
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'trainee1'
+        'trainee2';
+        grid-template-columns: 1fr ;
+        .bio-image{
+            height: 250px;
+            width: 250px;
+        }
+        .bio{
+            text-align: left;
+            font-size: 1.7rem;
+            margin-left: 3rem;
+            .text-secondary{
+                margin-left: -3rem;
+            }
+        }
+        .trainning{
+            font-size: 1.7rem;
+            
+        }
+    }
+    .salesforce{
+        .text-secondary{
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        ul li{
+            font-size: 1.7rem;
+            margin-left: 3rem;
+        }  
+    }
+     
     .projects{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
        // background-color: red;
-        height: 100%;
+       // height: 100%;
         .item{
             margin:  auto;
-            width: 80%;
-            height: 30rem;
+            width: 15rem;
+            height: 22rem;
             font-size: 1.2rem; 
             //background-color: yellow;
             
@@ -51,12 +116,31 @@
     }
     .boxes{
         width: 55%;
+       
         div{
             width: 100%;
         }
      }
+    #main-footer{
+        font-size: 1.5rem;
+    }
 }
+/*@include  mediaLgLandscape{
+    .about-info{
+        grid-template-areas:
+        'bioimage bio'
+        'trainee1 trainee2';
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}*/
 @include mediaMd{
+    .menu-btn{
+        right: 12px;
+        .fas{
+            font-size: 28px;
+          }
+    }
     main{
         align-items: center;
         .lg-heading{
@@ -93,6 +177,7 @@
         'trainee2';
 
         grid-template-columns: 1fr ;
+      
         .bio{
             text-align: left;
         }
@@ -107,14 +192,19 @@
         grid-template-columns:  1fr;
         .text-secondary{ text-align: center; }
         .item{
-            //background-color: red;
-            height: 17rem;
-            max-width: 65%;
-            height: 23rem;
+          // background-color: red;
+            .text-secondary{
+                text-shadow: none;
+                font-size: 1.2rem;
+            }
+            height: 19rem;
+            width: 15rem;
             margin: auto;
+           
             img{
+                margin-top: .2rem;
                 width: 100%;
-                height: 65%;  
+                height: 60%;  
             }
             .btn{
               // margin: 0 auto;
@@ -124,20 +214,21 @@
     }
     .boxes{
         width: 100%;
-        div{
-            width: 100%;
-            margin-left: 0;
-            padding: 0.5rem;
-            font-size: 1rem;
-            &:hover{
-                left: 0;
-                top: 9px;
-            }
-        }  
-     }
+     
+            div{
+                width: 100%;
+                margin-left: 0;
+                padding: 0.5rem;
+                font-size: 1rem;
+                &:hover{
+                    left: 0;
+                    top: 9px;
+                }
+            }  
+        }
+    
 } 
 @include  mediaMdLandscape{
-    
     .projects{
         .item{
             width: 45%;
@@ -152,6 +243,11 @@
     }
 }
 @include mediaSm{
+    .menu-btn{
+        .fas{
+            font-size: 24px;
+          }
+    }
     main#home h1{
         &.lg-heading{
             font-size: 3rem;
@@ -201,12 +297,13 @@
         grid-gap: 10px;
         .item{
             height: 15rem;
+            //background-color: yellow;
             .text-secondary{
-                font-size:  1rem;
+                font-size:  1rem; 
             }
             img{
                 width: 100%;
-                height: 50%;
+                height: 60%;
             }
             .btn{
                 padding: 0.1rem;
