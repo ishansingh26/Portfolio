@@ -1,5 +1,5 @@
 $primary-color: #444;
-$secondary-color: rgb(236, 236, 122);
+$secondary-color: rgb(255, 255, 185);
 
 @mixin background{
          &#bg-img{
@@ -26,18 +26,20 @@ $secondary-color: rgb(236, 236, 122);
     }
 }
 @mixin mediaLg{
-    @media screen and (min-width: 767px) and (max-width: 1023px){
+    @media screen and (min-width: 768px) and (max-width: 1020px){
         @content;
     }
 }
-/*@mixin mediaLgLandscape{
-    @media screen and (min-width: 767px) and (max-width: 1023px) and 
+@mixin mediaLgLandscape{
+    @media screen and (min-width: 768px) and (max-width: 1020px) and 
      (orientation: landscape){
         @content;
     }
-}*/
-@mixin mediaXl{
-    @media screen and (min-width: 1024px) and (max-width: 1420px){
+}
+/*@mixin mediaXl{
+    @media screen and (min-width: 941px) and (max-width: 1420px) and
+    (orientation: portrait)
+    {
         @content;
     }
-}
+}*/

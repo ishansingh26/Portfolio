@@ -1,6 +1,7 @@
-/*@mixin mediaLgLandscape{
-    @media screen and (min-width: 767px) and (max-width: 1023px) and 
-     (orientation: landscape){
+/*@mixin mediaXl{
+    @media screen and (min-width: 941px) and (max-width: 1420px) and
+    (orientation: portrait)
+    {
         @content;
     }
 }*/
@@ -32,7 +33,7 @@
     list-style: none;
     background-color: #2b2b2b; }
   .menu .nav-item.current > a {
-    color: #ecec7a;
+    color: #a0a000;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; }
   .menu-branding {
     background-color: #3f3f3f; }
@@ -46,7 +47,7 @@
       border: 2px solid #373737;
       opacity: 0.7; }
       .menu-branding .portrait:hover {
-        border-color: #e2e237;
+        border-color: #ffff6d;
         transition: 1s; }
   .menu .nav-link {
     display: inline-block;
@@ -56,7 +57,7 @@
     font-weight: 400;
     opacity: 0.6; }
     .menu .nav-link:hover {
-      color: #ecec7a; }
+      color: #ffff6d; }
 
 * {
   box-sizing: border-box; }
@@ -78,16 +79,16 @@ h1, h2 {
   color: white;
   font-weight: 500; }
   h1.lg-heading, h2.lg-heading {
-    font-size: 3.5rem;
+    font-size: 3.5em;
     opacity: 0.6; }
   h1.sm-heading, h2.sm-heading {
-    margin-top: .5rem;
+    margin-top: .5em;
     background: rgba(76, 76, 76, 0.2);
     font-weight: 400;
     opacity: 0.6; }
 
 .text-secondary {
-  color: #9d9d16;
+  color: #a0a000;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; }
 
 a {
@@ -108,7 +109,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #ecec7a; }
+        color: #ffff6d; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -128,17 +129,18 @@ main {
     grid-area: bioimage;
     margin: 1.5rem auto 0 auto;
     border-radius: 50%;
-    border: 3px solid #9d9d16; }
+    border: 3px solid #a0a000; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.2rem;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-size: 1.25em;
+    font-weight: 350;
+    letter-spacing: 0.5px;
     opacity: 0.6; }
     .about-info .bio .text-secondary {
-      font-weight: 400;
+      font-weight: 350;
       margin: 0;
-      text-shadow: none; }
+      text-shadow: none;
+      color: #a0a000; }
   .about-info .trainee-1 {
     grid-area: trainee1; }
   .about-info .trainee-2 {
@@ -148,25 +150,25 @@ main {
     padding: 0.5rem;
     box-shadow: 0 1px 4px black;
     opacity: 0.7;
-    font-size: 1.2rem;
-    font-weight: 300;
-    letter-spacing: 1px; }
+    font-size: 1.2em;
+    font-weight: 350;
+    letter-spacing: 0.5px; }
     .about-info .trainning h3 {
-      color: #9d9d16;
-      font-weight: 400; }
+      color: #a0a000;
+      font-weight: 350; }
     .about-info .trainning h5 {
       color: greenyellow;
-      font-weight: 400; }
+      font-weight: 350; }
 
 .bullet {
   list-style-type: none;
-  margin-left: .5rem; }
+  margin-left: 1.5rem; }
 
 .bullet li::before {
   content: '\2022';
-  margin-left: -4em;
-  padding: 2rem;
-  color: #ecec7a; }
+  margin-left: -4.5em;
+  padding: 2em;
+  color: #a0a000; }
 
 .salesforce {
   margin: 3.5rem  0 0 0;
@@ -175,16 +177,17 @@ main {
   box-shadow: 0 1px 4px black;
   border-radius: 5px;
   opacity: 0.7;
-  font-size: 1.2rem;
-  font-weight: 300;
-  letter-spacing: 1px; }
+  font-size: 1.2em;
+  font-weight: 350;
+  letter-spacing: 0.5px; }
   .salesforce .text-secondary {
     text-align: left;
     text-shadow: none;
-    font-weight: 400; }
+    font-weight: 300; }
 
 .projects {
   margin-top: 15px;
+  width: 52em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px; }
@@ -192,28 +195,34 @@ main {
     width: 100%;
     height: 25rem; }
     .projects .item .text-secondary {
-      font-size: 1.5rem;
+      font-size: 1.2em;
+      font-weight: 300;
+      letter-spacing: 0.5px;
       text-shadow: none;
+      color: #ffff07;
       opacity: 0.6; }
     .projects .item img {
-      width: 60%;
+      width: 100%;
       height: 60%;
       border: 3px solid white;
       opacity: 0.7; }
       .projects .item img:hover {
-        border-color: #ebeb76;
+        border-color: #a0a000;
         opacity: 0.5;
         transition: 1s; }
 
 .btn, .btn-dark {
   display: block;
-  padding: 0.4Rem;
+  padding: 0.4rem;
   border: 0;
-  width: 60%;
-  margin-bottom: 0.3rem; }
+  width: 100%;
+  margin-bottom: 0.3rem;
+  font-size: 1em;
+  font-weight: 350;
+  letter-spacing: 0.5px; }
   .btn:hover, .btn-dark:hover {
-    background: #323232;
-    border-color: #b3b31a; }
+    background: #252525;
+    border-color: #ffff6d; }
 
 .btn-dark {
   background: #414141;
@@ -233,15 +242,17 @@ main {
     text-align: center;
     margin-bottom: 1.5rem;
     padding: 0.5rem 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2em;
+    font-weight: 350;
+    letter-spacing: 0.5px;
     border: 3px solid white;
     position: relative;
     opacity: 0.6; }
     .boxes div:hover {
-      box-shadow: inset 4px 0 7px #ecec7a; }
+      box-shadow: inset 4px 0 7px #ffff6d; }
     .boxes div:hover, .boxes div:hover a {
       background: #2b2b2b;
-      border-color: #ecec7a;
+      border-color: #ffffb9;
       left: 9px;
       color: greenyellow; }
     .boxes div .text-secondary {
@@ -252,98 +263,106 @@ main {
   text-align: center;
   padding: 1rem;
   background: #1e1e1e;
-  opacity: 0.6; }
+  opacity: 0.6;
+  font-size: 1em;
+  font-weight: 350; }
 
-@media screen and (min-width: 1024px) and (max-width: 1420px) {
-  .menu-btn .fas {
-    font-size: 38px; }
-  .about-info {
-    grid-template-areas: 'bioimage bio' 'trainee1 trainee2';
-    grid-template-columns: repeat(2, 1fr); }
-    .about-info .bio-image {
-      height: 190px;
-      width: 190px; }
-    .about-info .bio {
-      font-size: 1.45rem; }
-    .about-info .trainning {
-      font-size: 1.45rem; }
-  .bullet li {
-    margin-left: 1rem; }
-  .salesforce {
-    font-size: 1.45rem; }
-  .projects {
-    grid-template-columns: repeat(3, 1fr); }
-    .projects .item {
-      margin: auto;
-      max-width: 85%;
-      height: 25.5rem;
-      font-size: 1.2rem; }
-      .projects .item .text-secondary {
-        font-size: 1.7rem; }
-      .projects .item img {
-        width: 100%; }
-      .projects .item .btn, .projects .item .btn-dark {
-        width: 100%; }
-  .boxes div {
-    width: 100%; }
-  #main-footer {
-    font-size: 1.6rem; } }
-
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-  .menu-btn .fas {
-    font-size: 35px; }
-  .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'trainee1' 'trainee2';
-    grid-template-columns: 1fr;
-    letter-spacing: 1px; }
-    .about-info .bio-image {
-      height: 150px;
-      width: 150px; }
-    .about-info .bio {
-      text-align: left;
-      font-size: 1.45rem;
-      font-weight: 300; }
-    .about-info .trainning {
-      font-size: 1.45rem;
-      font-weight: 300; }
-  .bullet li {
-    margin-left: 1rem; }
-  .salesforce {
-    font-size: 1.45rem;
-    letter-spacing: 1px; }
-    .salesforce ul li {
-      font-weight: 300; }
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px; }
-    .projects .item {
-      margin: auto;
-      width: 15rem;
-      height: 22rem;
-      font-size: 1.2rem; }
-      .projects .item img {
-        width: 100%; }
-      .projects .item .btn, .projects .item .btn-dark {
-        width: 100%; }
-  .boxes {
-    width: 55%; }
-    .boxes div {
-      width: 100%; }
-  #main-footer {
-    font-size: 1.4rem; } }
-
-/*@include  mediaLgLandscape{
+/*@include mediaXl{
+    .menu-btn{
+        .fas{
+            font-size: 38px;
+          }
+    }
     .about-info{
         grid-template-areas:
         'bioimage bio'
         'trainee1 trainee2';
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-        .bio{
-            font-size: 1.45;
+    }
+    .bullet li{
+        margin-left: 1rem;
+    }
+    .salesforce{
+        //font-size: 1.45rem;
+    }
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+        .item{
+            margin:  auto;
+            max-width: 85%;
+            height: 25.5rem;
+           // font-size: 1.2rem; 
+           // background-color: yellow;
+            .text-secondary{
+                //font-size: 1.7rem; 
+            }
+            img{
+                width: 100%;
+               // height: 100%; 
+            }
+            .btn{
+                width: 100%;
+            }
         }
     }
+    .boxes{
+        //background-color: red;
+        div{
+            width: 100%;
+        }
+     }
+     #main-footer{
+        //font-size: 1.6rem;
+     }
 }*/
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'trainee1' 'trainee2';
+    grid-template-columns: 1fr; }
+    .about-info .bio {
+      text-align: left;
+      font-weight: 300;
+      letter-spacing: 0.5px; }
+      .about-info .bio .text-secondary {
+        margin-left: 1rem; }
+    .about-info .trainning {
+      font-weight: 300;
+      letter-spacing: 0.5px; }
+  .bullet li {
+    margin-left: 1rem; }
+  .salesforce {
+    font-weight: 300;
+    letter-spacing: 0.5px; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    width: 35em;
+    margin: 15px auto 0 auto;
+    height: 100%; }
+    .projects .item {
+      margin: auto;
+      height: 22rem; }
+      .projects .item .text-secondary {
+        font-weight: 300;
+        letter-spacing: 0.5px; }
+      .projects .item img {
+        width: 100%;
+        height: 66%; }
+      .projects .item .btn, .projects .item .btn-dark {
+        width: 100%;
+        font-weight: 300;
+        letter-spacing: 0.5px; }
+  .boxes {
+    width: 55%; }
+    .boxes div {
+      width: 100%; } }
+
+@media screen and (min-width: 768px) and (max-width: 1020px) and (orientation: landscape) {
+  .about-info {
+    grid-template-areas: 'bioimage bio' 'trainee1 trainee2';
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; } }
+
 @media screen and (min-width: 360px) and (max-width: 767px) {
   .menu-btn {
     right: 12px; }
@@ -376,70 +395,77 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'trainee1' 'trainee2';
     grid-template-columns: 1fr; }
     .about-info .bio {
-      font-size: 1.2rem; }
-      .about-info .bio .text-secondary {
-        margin-left: 1rem; }
+      font-weight: 300;
+      letter-spacing: .3px; }
     .about-info .trainning {
-      font-size: 1.2rem; }
-  .bullet li {
-    margin-left: 1rem; }
+      font-weight: 300;
+      letter-spacing: 0.3px; }
   .salesforce {
-    font-size: 1.2rem; }
+    font-weight: 300;
+    letter-spacing: 0.3px; }
   .projects {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    width: 13em;
+    margin: 15px auto 0 auto; }
     .projects .text-secondary {
       text-align: center; }
     .projects .item {
-      height: 19rem;
-      width: 15rem;
-      margin: auto; }
+      margin: auto;
+      height: 19rem; }
       .projects .item .text-secondary {
-        text-shadow: none;
-        font-size: 1.2rem; }
+        font-weight: 300;
+        letter-spacing: 0.3px; }
       .projects .item img {
-        margin-top: .2rem;
         width: 100%;
         height: 60%; }
       .projects .item .btn, .projects .item .btn-dark {
-        width: 100%; }
+        width: 100%;
+        font-weight: 300;
+        letter-spacing: 0.3px; }
   .boxes {
     width: 100%; }
     .boxes div {
       width: 100%;
       margin-left: 0;
       padding: 0.5rem;
-      font-size: 1rem; }
+      font-size: 1em;
+      font-weight: 300;
+      letter-spacing: 0.3px; }
       .boxes div:hover {
         left: 0;
         top: 9px; } }
 
 @media screen and (min-width: 360px) and (max-width: 767px) and (orientation: landscape) {
-  .projects .item {
-    width: 45%; }
-    .projects .item img {
-      width: 100%; }
-    .projects .item .btn, .projects .item .btn-dark {
-      width: 100%; } }
+  .boxes div {
+    font-size: 1.2em; } }
 
 @media screen and (max-width: 359px) {
   .menu-btn .fas {
     font-size: 24px; }
-  main#home h1.lg-heading {
-    font-size: 3rem; }
-  main#about h1.lg-heading {
-    font-size: 2rem; }
-  .sm-heading {
-    font-size: 0.8rem; }
-  .text-secondary {
-    text-align: center; }
+  main {
+    margin-left: -1.5rem; }
+    main#home .lg-heading {
+      font-size: 3.5em; }
+    main .lg-heading {
+      font-size: 2rem; }
+    main .sm-heading {
+      font-size: 0.8rem; }
+    main .text-secondary {
+      text-align: center; }
   .about-info {
     display: grid;
     grid-template-areas: 'bioimage'  'bio' 'trainee1'  'trainee2';
     grid-template-columns: 1fr; }
     .about-info .bio {
-      font-size: 1rem; }
+      font-weight: 300;
+      letter-spacing: 0.3px; }
     .about-info .trainning {
-      font-size: 1rem; }
+      font-weight: 300;
+      letter-spacing: 0.3px; }
+  .salesforce {
+    font-weight: 300;
+    letter-spacing: 0.3px; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -453,32 +479,38 @@ main {
       height: 120px; }
   ul.menu-nav {
     height: 78vh; }
-  .salesforce {
-    font-size: 1rem; }
   .projects {
     grid-template-columns: 1fr;
-    grid-gap: 10px; }
+    grid-gap: 30px;
+    width: 10em; }
     .projects .item {
-      height: 15rem; }
+      height: 16rem; }
       .projects .item .text-secondary {
-        font-size: 1rem; }
+        font-weight: 300;
+        letter-spacing: 0.3px; }
       .projects .item img {
         width: 100%;
         height: 60%; }
       .projects .item .btn, .projects .item .btn-dark {
         padding: 0.1rem;
-        width: 100%; }
+        width: 100%;
+        font-size: 1em;
+        font-weight: 300;
+        letter-spacing: 0.3px; }
   #home {
     height: 100vh; }
   .boxes {
-    min-width: 100%; }
+    width: 100%; }
     .boxes div {
       width: 100%;
-      font-size: 0.6rem;
       margin-bottom: 0.8rem;
-      text-align: center; }
+      font-size: 0.7em;
+      font-weight: 300;
+      letter-spacing: 0.3px; }
+      .boxes div .text-secondary {
+        text-shadow: none; }
       .boxes div:hover {
         left: 0;
         top: 9px; }
   #main-footer {
-    font-size: 1rem; } }
+    font-size: 0.8em; } }

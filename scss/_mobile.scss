@@ -1,4 +1,4 @@
-@include mediaXl{
+/*@include mediaXl{
     .menu-btn{
         .fas{
             font-size: 38px;
@@ -9,24 +9,13 @@
         'bioimage bio'
         'trainee1 trainee2';
         grid-template-columns: repeat(2, 1fr);
-        .bio-image{
-            height: 190px;
-            width: 190px;
-        }
-        .bio{
-            font-size: 1.45rem;
-        }
-        .trainning{
-            font-size: 1.45rem;
-           
-        }
+        grid-gap: 20px;
     }
     .bullet li{
         margin-left: 1rem;
     }
     .salesforce{
-        font-size: 1.45rem;
-      
+        //font-size: 1.45rem;
     }
     .projects{
         grid-template-columns: repeat(3, 1fr);
@@ -34,15 +23,14 @@
             margin:  auto;
             max-width: 85%;
             height: 25.5rem;
-            font-size: 1.2rem; 
+           // font-size: 1.2rem; 
            // background-color: yellow;
             .text-secondary{
-                font-size: 1.7rem; 
+                //font-size: 1.7rem; 
             }
             img{
                 width: 100%;
-               // height: 100%;
-               
+               // height: 100%; 
             }
             .btn{
                 width: 100%;
@@ -56,15 +44,11 @@
         }
      }
      #main-footer{
-        font-size: 1.6rem;
+        //font-size: 1.6rem;
      }
-}
+}*/
 @include mediaLg{
-    .menu-btn{
-        .fas{
-            font-size: 35px;
-          }
-    }
+  
     .about-info{
         grid-template-areas: 
         'bioimage'
@@ -72,52 +56,51 @@
         'trainee1'
         'trainee2';
         grid-template-columns: 1fr ;
-        letter-spacing: 1px;
-        .bio-image{
-            height: 150px;
-            width: 150px;
-        }
+        
         .bio{
             text-align: left;
-            font-size: 1.45rem;
             font-weight: 300;
-           // margin-left: 3rem;
-            
+            letter-spacing: 0.5px;
+            .text-secondary{ margin-left: 1rem;}
+             
         }
         .trainning{
-            font-size: 1.45rem;
-            font-weight: 300;
+           font-weight: 300;
+           letter-spacing: 0.5px;
         }
     }
     .bullet li{
         margin-left: 1rem;
     }
     .salesforce{
-        font-size: 1.45rem;
-        letter-spacing: 1px;
-        ul li{
-            font-weight: 300;
-        }      
+        font-weight: 300;
+        letter-spacing: 0.5px;      
     }
      
     .projects{
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-       // background-color: red;
-       // height: 100%;
+        width: 35em;
+        margin: 15px auto 0 auto;
+        //background-color: red;
+        height: 100%;
         .item{
             margin:  auto;
-            width: 15rem;
             height: 22rem;
-            font-size: 1.2rem; 
+            //background-color: yellow;
+            .text-secondary{
+                font-weight: 300;
+                letter-spacing: 0.5px;
+            }
             //background-color: yellow;
             
             img{
                 width: 100%;
-               // height: 100%;
+                height: 66%;
             }
             .btn{
                 width: 100%;
+                font-weight: 300;
+                letter-spacing: 0.5px;
             }
         }
     }
@@ -128,22 +111,17 @@
             width: 100%;
         }
      }
-    #main-footer{
-        font-size: 1.4rem;
-    }
+   
 }
-/*@include  mediaLgLandscape{
+@include  mediaLgLandscape{
     .about-info{
         grid-template-areas:
         'bioimage bio'
         'trainee1 trainee2';
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-        .bio{
-            font-size: 1.45;
-        }
     }
-}*/
+}
 @include mediaMd{
     .menu-btn{
         right: 12px;
@@ -192,42 +170,43 @@
         grid-template-columns: 1fr ;
         
         .bio{
-            font-size: 1.2rem;
-            .text-secondary{
-                margin-left: 1rem;
-            }
+            font-weight: 300;
+            letter-spacing: .3px;
         }
         .trainning{
-            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 0.3px;
         }
     }
-    .bullet li{
-        margin-left: 1rem;
-    }
     .salesforce{
-       font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 0.3px;
     }
     .projects{
         grid-template-columns:  1fr;
+        grid-gap: 40px;
+        width: 13em;
+        margin: 15px auto 0 auto;
+        //background-color: yellow;
         .text-secondary{ text-align: center; }
         .item{
-          // background-color: red;
+           //background-color: red;
+           margin: auto;
+           height: 19rem;
             .text-secondary{
-                text-shadow: none;
-                font-size: 1.2rem;
+                font-weight: 300;
+                letter-spacing: 0.3px;
             }
-            height: 19rem;
-            width: 15rem;
-            margin: auto;
-           
+            
             img{
-                margin-top: .2rem;
+
                 width: 100%;
                 height: 60%;  
             }
             .btn{
-              // margin: 0 auto;
                width: 100%;
+               font-weight: 300;
+               letter-spacing: 0.3px;
             }
         }
     }
@@ -238,7 +217,10 @@
                 width: 100%;
                 margin-left: 0;
                 padding: 0.5rem;
-                font-size: 1rem;
+                font-size: 1em;
+                font-weight: 300;
+                letter-spacing: 0.3px;
+
                 &:hover{
                     left: 0;
                     top: 9px;
@@ -248,16 +230,9 @@
     
 } 
 @include  mediaMdLandscape{
-    .projects{
-        .item{
-            width: 45%;
-            
-            img{
-                width: 100%;
-            }
-            .btn{
-                width: 100%;
-            }
+    .boxes{
+        div{
+            font-size: 1.2em;
         }
     }
 }
@@ -267,18 +242,15 @@
             font-size: 24px;
           }
     }
-    main#home h1{
-        &.lg-heading{
-            font-size: 3rem;
-        } 
+    main{
+        margin-left: -1.5rem;
+        &#home{
+            .lg-heading{ font-size: 3.5em; }
+         }
+        .lg-heading{ font-size: 2rem;}
+        .sm-heading{ font-size: 0.8rem; }
+        .text-secondary{ text-align: center; }
     }
-    main#about h1{
-        &.lg-heading{
-            font-size: 2rem;
-        } 
-    }
-    .sm-heading{ font-size: 0.8rem; }
-    .text-secondary{ text-align: center; }
     .about-info{
         display: grid;
         grid-template-areas:
@@ -288,12 +260,18 @@
         'trainee2';
         grid-template-columns: 1fr;
         .bio{
-            font-size: 1rem;
+            font-weight: 300;
+            letter-spacing: 0.3px;
         }
         .trainning{
-            font-size: 1rem;
+            font-weight: 300;
+            letter-spacing: 0.3px
         }
     }
+    .salesforce{
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        }
     ul.menu-nav,
     div.menu-branding{
         float: none;
@@ -301,28 +279,26 @@
         min-height: 0; 
         text-align: center;
     }
-    div.menu-branding{
-        height: 22vh;
-        .portrait{
-            width: 120px;
-            height: 120px;
+        div.menu-branding{
+            height: 22vh;
+            .portrait{
+                width: 120px;
+                height: 120px;
+            }
         }
-    }
-    ul.menu-nav{
-        height: 78vh;
-      
-    }
-    .salesforce{
-        font-size: 1rem;
-    }
-    .projects{
+        ul.menu-nav{
+            height: 78vh;
+        }
+        .projects{
         grid-template-columns: 1fr;
-        grid-gap: 10px;
+        grid-gap: 30px;
+        width: 10em;
         .item{
-            height: 15rem;
+            height: 16rem;
             //background-color: yellow;
             .text-secondary{
-                font-size:  1rem; 
+                font-weight: 300;
+                letter-spacing: 0.3px;
             }
             img{
                 width: 100%;
@@ -331,19 +307,27 @@
             .btn{
                 padding: 0.1rem;
                 width: 100%;
+                font-size: 1em;
+                font-weight: 300;
+                letter-spacing: 0.3px;
             }
         } 
     }
     #home{
     height: 100vh;
    }
+
    .boxes{
-    min-width: 100%;
+    width: 100%;
+    //background-color: red;
     div{
         width: 100%;
-        font-size: 0.6rem;
+    //  background-color: yellow;
         margin-bottom: 0.8rem;
-        text-align: center;
+        font-size: 0.7em;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        .text-secondary{ text-shadow: none; }
         &:hover{
             left: 0;
             top: 9px;
@@ -351,6 +335,6 @@
     }
    }
    #main-footer{
-       font-size: 1rem;
+       font-size: 0.8em;
    }
 }
