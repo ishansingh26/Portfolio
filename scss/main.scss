@@ -125,17 +125,18 @@ main{
 }
 .bullet {
     list-style-type: none;
-    margin-left: 1.5rem;
+    margin-left: -3.2rem;
+    padding-left: 5rem;
 }
 .bullet li::before{
     content: '\2022';
-    margin-left: -4.5em;
-    padding: 2em;
+    margin-left: -1.5rem;
+    padding: .5rem;
     color: darken($secondary-color, 55);
 }
 .salesforce{
     margin:   3.5rem  0 0 0 ;
-    padding: 0.5rem;
+    padding: .5rem;
     background-color:  darken($primary-color, 2);
     box-shadow: 0 1px 4px black;
     border-radius: 5px;

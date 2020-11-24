@@ -162,17 +162,18 @@ main {
 
 .bullet {
   list-style-type: none;
-  margin-left: 1.5rem; }
+  margin-left: -3.2rem;
+  padding-left: 5rem; }
 
 .bullet li::before {
   content: '\2022';
-  margin-left: -4.5em;
-  padding: 2em;
+  margin-left: -1.5rem;
+  padding: .5rem;
   color: #a0a000; }
 
 .salesforce {
   margin: 3.5rem  0 0 0;
-  padding: 0.5rem;
+  padding: .5rem;
   background-color: #3f3f3f;
   box-shadow: 0 1px 4px black;
   border-radius: 5px;
@@ -324,13 +325,9 @@ main {
       text-align: left;
       font-weight: 300;
       letter-spacing: 0.5px; }
-      .about-info .bio .text-secondary {
-        margin-left: 1rem; }
     .about-info .trainning {
       font-weight: 300;
       letter-spacing: 0.5px; }
-  .bullet li {
-    margin-left: 1rem; }
   .salesforce {
     font-weight: 300;
     letter-spacing: 0.5px; }
@@ -457,15 +454,22 @@ main {
     display: grid;
     grid-template-areas: 'bioimage'  'bio' 'trainee1'  'trainee2';
     grid-template-columns: 1fr; }
+    .about-info .bio-image {
+      width: 120px;
+      height: 120px; }
     .about-info .bio {
       font-weight: 300;
       letter-spacing: 0.3px; }
+    .about-info .trainee-1 h3, .about-info .trainee-1 h5, .about-info .trainee-2 h3, .about-info .trainee-2 h5 {
+      text-align: center; }
     .about-info .trainning {
       font-weight: 300;
       letter-spacing: 0.3px; }
   .salesforce {
     font-weight: 300;
     letter-spacing: 0.3px; }
+    .salesforce .text-secondary {
+      text-align: center; }
   ul.menu-nav,
   div.menu-branding {
     float: none;

@@ -61,7 +61,7 @@
             text-align: left;
             font-weight: 300;
             letter-spacing: 0.5px;
-            .text-secondary{ margin-left: 1rem;}
+            //.text-secondary{ margin-left: 1rem;}
              
         }
         .trainning{
@@ -69,9 +69,7 @@
            letter-spacing: 0.5px;
         }
     }
-    .bullet li{
-        margin-left: 1rem;
-    }
+    
     .salesforce{
         font-weight: 300;
         letter-spacing: 0.5px;      
@@ -175,7 +173,7 @@
         }
         .trainning{
             font-weight: 300;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.3px; 
         }
     }
     .salesforce{
@@ -259,19 +257,28 @@
         'trainee1' 
         'trainee2';
         grid-template-columns: 1fr;
+        .bio-image{
+            width: 120px;
+            height: 120px;
+        }
         .bio{
             font-weight: 300;
             letter-spacing: 0.3px;
         }
+        .trainee-1, .trainee-2{
+            h3, h5{ text-align: center;}
+            
+        }
         .trainning{
             font-weight: 300;
-            letter-spacing: 0.3px
+            letter-spacing: 0.3px;
         }
     }
     .salesforce{
         font-weight: 300;
         letter-spacing: 0.3px;
-        }
+        .text-secondary{ text-align: center;}
+    }
     ul.menu-nav,
     div.menu-branding{
         float: none;
