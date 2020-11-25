@@ -127,12 +127,16 @@ main{
     list-style-type: none;
     margin-left: -3.2rem;
     padding-left: 5rem;
+    strong{
+        font-weight: 600;
+    }
 }
 .bullet li::before{
     content: '\2022';
     margin-left: -1.5rem;
     padding: .5rem;
     color: darken($secondary-color, 55);
+   
 }
 .salesforce{
     margin:   3.5rem  0 0 0 ;
@@ -148,6 +152,7 @@ main{
         text-align: left;
         text-shadow: none;
         font-weight: 300;
+        
     } 
 }
 
