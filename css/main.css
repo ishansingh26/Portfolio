@@ -164,6 +164,8 @@ main {
   list-style-type: none;
   margin-left: -3.2rem;
   padding-left: 5rem; }
+  .bullet strong {
+    font-weight: 600; }
 
 .bullet li::before {
   content: '\2022';
