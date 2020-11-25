@@ -48,7 +48,6 @@
      }
 }*/
 @include mediaLg{
-  
     .about-info{
         grid-template-areas: 
         'bioimage'
@@ -210,12 +209,12 @@
     }
     .boxes{
         width: 100%;
-     
+        //background-color: red;
             div{
                 width: 100%;
-                margin-left: 0;
+         //       background-color: yellow;
                 padding: 0.5rem;
-                font-size: 1em;
+                font-size: .9em;
                 font-weight: 300;
                 letter-spacing: 0.3px;
 
