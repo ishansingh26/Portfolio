@@ -30,8 +30,9 @@
        background-color: darken($primary-color, 10);
    }
    .nav-item{
+      
        &.current > a{
-          color: darken($secondary-color, 55);
+          color: darken($secondary-color, 18);
           text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
        }
    }
@@ -61,7 +62,7 @@
        font-weight: 400;
        opacity: 0.6;
        &:hover{
-           color: darken($secondary-color, 15);
+           color: darken($secondary-color, 14);
        }
    }
 }
