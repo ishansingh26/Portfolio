@@ -33,7 +33,7 @@
     list-style: none;
     background-color: #2b2b2b; }
   .menu .nav-item.current > a {
-    color: #a0a000;
+    color: #ffff5d;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; }
   .menu-branding {
     background-color: #3f3f3f; }
@@ -57,7 +57,7 @@
     font-weight: 400;
     opacity: 0.6; }
     .menu .nav-link:hover {
-      color: #ffff6d; }
+      color: #ffff72; }
 
 * {
   box-sizing: border-box; }
@@ -88,7 +88,7 @@ h1, h2 {
     opacity: 0.6; }
 
 .text-secondary {
-  color: #a0a000;
+  color: #ffff5d;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; }
 
 a {
@@ -101,11 +101,12 @@ header {
   width: 100%; }
 
 main {
-  padding: 4rem;
+  padding: 3rem 4rem 4rem 4rem;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 2.5rem;
-    opacity: 0.8; }
+    opacity: 0.8;
+    text-align: center; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
@@ -185,6 +186,7 @@ main {
   font-weight: 350;
   letter-spacing: 0.5px; }
   .salesforce .text-secondary {
+    color: #a0a000;
     text-align: left;
     text-shadow: none;
     font-weight: 300; }
@@ -211,7 +213,7 @@ main {
       border: 3px solid white;
       opacity: 0.7; }
       .projects .item img:hover {
-        border-color: #a0a000;
+        border-color: #e2e200;
         opacity: 0.5;
         transition: 1s; }
 
@@ -259,6 +261,8 @@ main {
       border-color: #ffffb9;
       left: 9px;
       color: greenyellow; }
+    .boxes div a:hover {
+      opacity: 0.7; }
     .boxes div .text-secondary {
       display: block; }
 
