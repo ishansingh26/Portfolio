@@ -108,9 +108,14 @@ main {
     opacity: 0.8;
     text-align: center; }
     main .icons a {
-      padding: 0.4rem; }
+      margin: 0.4rem;
+      padding: 0;
+      color: #303030 white;
+      font-size: 22px; }
       main .icons a:hover {
         color: #ffff6d; }
+      main .icons a i {
+        font-size: 27px; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -240,7 +245,7 @@ main {
 .boxes {
   margin-top: 3rem;
   display: block;
-  width: 55%;
+  width: 50%;
   min-height: 100%; }
   .boxes div {
     display: block;
@@ -355,11 +360,7 @@ main {
       .projects .item .btn, .projects .item .btn-dark {
         width: 100%;
         font-weight: 300;
-        letter-spacing: 0.5px; }
-  .boxes {
-    width: 55%; }
-    .boxes div {
-      width: 100%; } }
+        letter-spacing: 0.5px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) and (orientation: landscape) {
   .about-info {
@@ -428,7 +429,8 @@ main {
         font-weight: 300;
         letter-spacing: 0.3px; }
   .boxes {
-    width: 100%; }
+    width: 14.5em;
+    margin: 3rem auto; }
     .boxes div {
       width: 100%;
       padding: 0.5rem;
@@ -440,8 +442,10 @@ main {
         top: 9px; } }
 
 @media screen and (min-width: 360px) and (max-width: 767px) and (orientation: landscape) {
-  .boxes div {
-    font-size: 1.2em; } }
+  .boxes {
+    width: 20em; }
+    .boxes div {
+      font-size: 1.2em; } }
 
 @media screen and (max-width: 359px) {
   .menu-btn .fas {
