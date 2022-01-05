@@ -101,13 +101,7 @@
             }
         }
     }
-    .boxes{
-        width: 55%;
-       
-        div{
-            width: 100%;
-        }
-     }
+  
    
 }
 @include  mediaLgLandscape{
@@ -208,8 +202,9 @@
         }
     }
     .boxes{
-        width: 100%;
-        //background-color: red;
+        width: 14.5em;
+       // background-color: red;
+        margin: 3rem auto;
             div{
                 width: 100%;
          //       background-color: yellow;
@@ -228,6 +223,7 @@
 } 
 @include  mediaMdLandscape{
     .boxes{
+        width: 20em;
         div{
             font-size: 1.2em;
         }
