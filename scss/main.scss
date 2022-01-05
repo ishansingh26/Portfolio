@@ -1,10 +1,13 @@
 @import 'config';
 @import 'menu';
 
+
+
 *{
     box-sizing: border-box;
 }
 body{
+    
     @include background;
     background-color: darken($primary-color, 7);
     color: white;
